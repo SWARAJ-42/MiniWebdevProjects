@@ -1,0 +1,103 @@
+/* Applying initial conditions to all the elements of the page */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Righteous", monospace;
+}
+
+html {
+  background-color: #282828;
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+/* Clock container */
+div.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  height: 45rem;
+  position: relative;
+  padding: 3rem;
+  border: 7px solid #282828;
+  border-radius: 50%;
+  /* Shadow effect */
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+
+/* Designing the numbers */
+div.numbers {
+  width: 4rem;
+  height: 4rem;
+  color: rgba(0, 255, 255, 0.4);
+  border: 2px solid #282828;
+  padding: 0.5rem;
+  /* Shadow effect */
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+    4px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* Designing the hinge */
+div.junction {
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+/* Hour Hand */
+div.hrs {
+  width: 0.6rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(0, 183, 255);
+  animation: Motion 86400s infinite linear;
+}
+
+/* Minute Hand */
+div.min {
+  width: 0.4rem;
+  height: 10rem;
+  z-index: 5;
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.5);
+  animation: Motion 3600s infinite linear;
+}
+
+/* Second Hand */
+div.sec {
+  width: 0.2rem;
+  height: 12rem;
+  z-index: 0;
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.5);
+  animation: Motion 60s infinite linear;
+}
+
+/* Animation For Respective Hands */
+@keyframes Motion {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

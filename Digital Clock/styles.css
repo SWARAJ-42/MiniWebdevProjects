@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* clock container */
+.container{
+    border-bottom: 2px solid aqua;
+    padding: 0px 100px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The clock */
+.clock{
+    color: aqua;
+    border-top: 2px solid aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    font-size: 80px;
+    padding-top: 20px ;
+}
+
+/* The date */
+.date{
+    color: aqua;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+/* The day */
+.day{
+    color: aqua;
+    font-size: 20px;
+    text-align: right;
+    width: 1000px;
+    padding-bottom: 10px;
+}
+
+/* The quote */
+.Quote{
+    color: aqua;
+    font-size: 20px;
+    width: 1000px;
+    padding-top: 10px;
+}
