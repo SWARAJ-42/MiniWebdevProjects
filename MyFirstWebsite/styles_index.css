@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#follow_me {
+    position: absolute;
+    z-index: 1;
+    left: 90%;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    top: 8vw;
+    height: 35vw;
+    width: 80%;
+    align-content: center;
+    font-family: "Audiowide", cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 4px 0 #000, 1px 4px 0 #000, 1px -4px 0 #000,
+        -1px -4px 0 #000;
+    font-size: 10vw;
+    background-color: rgb(1,1,1,.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 3vw;
+    padding-block: 3vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
+.places {
+    display: flex;
+    align-self: center;
+    position: relative;
+    top: 10vw;
+    background-color: rgb(1,1,1,.5);
+    border-radius: 4vw;
+    width: 50vw;
+    margin: auto;
+}
+
+button {
+    background-color: #333;
+    border: .1vw solid transparent;
+    color: aqua;
+    border-radius: 0.25rem;
+    font-size: 0.95vw;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: #111;
+    color: rgb(238, 255, 0);
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.fa {
+    padding: .7vw;
+    font-size: 3vw;
+    width:45px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 45vw;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+.fa-quora {
+    background: #af0707;
+    color: rgb(255, 255, 255);
+}
+.fa-instagram {
+    background: #5014c0;
+    color: white;
+}

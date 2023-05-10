@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="styles_index.css" rel="stylesheet">
+    <link href="styles_nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Geek Treasure</title>
+</head>
+
+<body>
+    <div id="follow_me">
+        <a href="https://www.quora.com/profile/Swaraj-Biswal-8/" target=”_blank” class="fa fa-quora"></a>
+        <a href="https://twitter.com/Swaraj58404208" target=”_blank” class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/biswalswaraj_42/" target=”_blank” class="fa fa-instagram"></a>
+    </div>
+    <ul>
+        <li><a id="hme" href="index.html">Home</a></li>
+        <li><a id="yt" href="youtube.html">Youtube</a></li>
+        <li><a id="nws" href="News_sites.html">News sites</a></li>
+        <li><a id="abt" href="about.html">About</a></li>
+    </ul>
+    <button id="changebg" style="position: fixed;">Change Background</button>
+    <script>
+        var background = ['background2.jpg', 'background3.png', 'background4.jpg', 'background5.jpg'];
+        var i = 0;
+        let body = document.querySelector('body');
+        document.querySelector('#changebg').addEventListener('click', function () {
+            body.style.backgroundImage = 'url('+background[i]+')';
+            i++;
+            if (i == 4) {
+                i = 0;
+            }
+        });
+    </script>
+    <div class="Search">
+        <form action="https://www.youtube.com/search" class="mt-4" method="get"
+            style="display:flex; flex-direction: column; position: relative;">
+            <input autocomplete="off" class="Searchbar" name="q" placeholder="Search on youtube" type="search">
+            <button type="submit">youtube Search</button>
+        </form>
+    </div>
+    <div
+        style="font-size: 3vw; color: white; position: relative; margin: auto; top: 5vw;  display: flex; justify-content: center;">
+        Youtube Interests</div>
+    <div class="Science Content">
+        <div>
+            <p>Space Science stuffs</p>
+        </div>
+        <div class="description">
+            <p>Here I will share my top channel choices where you can explore the beauty of universe and it's science.
+            </p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/inanutshell" target="_blank"
+                style="text-decoration: None; color:aqua"><img src="kurzesagt.jpg" style="border-radius: 20vw;" alt="">
+                kurzgesagt - in a Nutshell</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This channel is a Treasure when it comes to
+                simplicity and beautiful animation.<br> Here they explain most of the complex topics in a way even a kid
+                can understand <br>and appreciate the mechanics of universe. They also explain about the possibities
+                of<br>
+                futuristic technologies and hypothetical scenarios with science. This channel is perfect<br> for those
+                who want to learn
+                about universe but donot want to go into the maths.</p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/pbsspacetime" target="_blank"
+                style="text-decoration: None; color:aqua"><img src="PBS.jpg" style="border-radius: 20vw;" alt=""> PBS
+                Space Time</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This channel is basically a more technical version
+                of the previous one.
+                Here you will <br> learn about the universe with some toppings of mathematics. The channel is not that
+                <br> technical but it will help you
+                understand how the universe works under the hood better. <br> Analogically this channel teaches c
+                language instead of assembly language.
+                you <br> know what I mean.
+            </p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/SEAmedia" target="_blank" style="text-decoration: None; color:aqua"><img
+                    src="SEA.jpg" style="border-radius: 20vw;" alt=""> SEA</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This channel contains high quality documentaries
+                on the topics of space such <br>
+                as Black Holes, Big Bang, Dark matter, Dark energy, you name it. This channel <br> is a daily dose for
+                my sleep.</p>
+        </div>
+    </div>
+    <div class="engineering Content">
+        <div>
+            <p>Engineering Stuffs</p>
+        </div>
+        <div class="description">
+            <p>Here I will share my top channel choices which can make you fall in love with engineering.
+            </p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/RealEngineering" target="_blank"
+                style="text-decoration: None; color:aqua"><img src="Rengineer.jpg" style="border-radius: 20vw;" alt="">
+                Real Engineering</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;"> This channel focuses on the engineering of
+                marvels that are being created or are <br>from past
+                such as curiosity rover, perseverence, SR-71 Blackbird, x-15, 3D printing, <br> renewable energy amd
+                many more. This channel is completely theoritical on explaining <br> stuff.</p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/theHacksmith" target="_blank"
+                style="text-decoration: None; color:aqua"><img src="Hacksmith.jpg" style="border-radius: 20vw;" alt="">
+                Hacksmith</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This is one of my favourite channels. Here they
+                pick technologies
+                from movies, shows,<br> games, comics and try make them with present technologies such as Iron man
+                <br>equipments, Captain America's shield,
+                ligtsaber (every nerd's dream weapon). Its quite fun <br> to see futuristic techs coming to life using
+                todays engineering.
+            </p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/ALEXLAB" target="_blank" style="text-decoration: None; color:aqua"><img
+                    src="Alex.jpg" style="border-radius: 20vw;" alt=""> ALex Lab</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This channel quite similar to Hacksmith but more
+                focused on creating iron man techs<br></p>
+        </div>
+    </div>
+    <div class="Scifi Content">
+        <div>
+            <p>Sci-Fi Stuffs</p>
+        </div>
+        <div class="description">
+            <p>Here I will share my top Channel choices which have Sci-Fi terms in it.
+            </p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/channel/UCZFipeZtQM5CKUjx6grh54g" target="_blank"
+                style="text-decoration: None; color: aqua"><img src="Isaac.jpg" style="border-radius: 20vw;" alt="">
+                Isaac Arthur</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This channel focuses on exploring concepts in
+                science with an emphasis on futurism <br>and space exploration, along with a healthy dose of science
+                fiction. While we explore <br> many concepts and technologies that are far beyond us now, we try to keep
+                everything <br> inside the bounds of known science or major theories. </p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.youtube.com/c/becausescience" target="_blank"
+                style="text-decoration: None; color:aqua"><img src="Because_science.jpg" style="border-radius: 20vw;"
+                    alt=""> Because Science</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">This channel uses real world science and maths to
+                make sense of pop culture quandaries <br> in comics, video games, movies and shows <br></p>
+        </div>
+    </div>
+</body>
+
+</html>

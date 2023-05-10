@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        function action_sound(event) {
+            var audio = new Audio('button.wav');
+            if (event.target.id == 'youtube_button') {
+                audio.play();
+                setTimeout(function () { location.href = 'youtube.html'; }, 200);
+            }
+            else if (event.target.id == 'News_sites') {
+                audio.play();
+                setTimeout(function () { location.href = 'News_sites.html'; }, 200);
+            }
+
+        }
+    </script>
+    <link href="styles_nav.css" rel="stylesheet">
+    <link href="styles_index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Geek Treasure</title>
+</head>
+
+<body>
+    <div id="follow_me">
+        <a href="https://www.quora.com/profile/Swaraj-Biswal-8/" target=”_blank” class="fa fa-quora"></a>
+        <a href="https://twitter.com/Swaraj58404208" target=”_blank” class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/biswalswaraj_42/" target=”_blank” class="fa fa-instagram"></a>
+    </div>
+    <ul>
+        <li><a id="hme" href="index.html" onclick="alertprompt(event)">Home</a></li>
+        <li><a id="yt" href="youtube.html">Youtube</a></li>
+        <li><a id="nws" href="News_sites.html">News sites</a></li>
+        <li><a id="abt" href="about.html">About</a></li>
+    </ul>
+    <button id="changebg" style="position: fixed;">Change Background</button>
+    <script>
+        var background = ['background2.jpg', 'background3.png', 'background4.jpg', 'background5.jpg'];
+        var i = 0;
+        let body = document.querySelector('body');
+        document.querySelector('#changebg').addEventListener('click', function () {
+            body.style.backgroundImage = 'url('+background[i]+')';
+            i++;
+            if (i == 4) {
+                i = 0;
+            }
+        });
+    </script>
+    <div class="greetings">
+        <div>
+            <p><b>Welcome</b></p>
+        </div>
+        <div style="font-size: 3vw;">
+            <p><i><b>To Geek's Treasure</b></i></p>
+        </div>
+        <div id="content" style="font-size: .9vw; color: white;">
+            <p>This website is a portfolio of an ordinary geek<br>
+                who loves watching anything that is geeky.<br>
+                Here I will share places where I generally spend<br>
+                my time on the internet. </p>
+        </div>
+    </div>
+    <div class="places" style="font-size: 3vw; padding: 3vw;">
+        <div style="padding: 1vw;">
+            <p style="color: white;">Categories:</p>
+            <button id="youtube_button" onclick="action_sound(event)">Youtube Channels where I spend most of my
+                time</button><br>
+            <button id="News_sites" onclick="action_sound(event)">News sites where I find about new science research and
+                technologies</button><br>
+        </div>
+    </div>
+</body>
+
+</html>

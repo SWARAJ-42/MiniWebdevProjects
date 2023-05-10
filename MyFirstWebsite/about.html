@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="styles_index.css" rel="stylesheet">
+    <link href="styles_nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Geek Treasure</title>
+</head>
+
+<body style="background-image: url('background3.png');">
+    <div id="follow_me">
+        <a href="https://www.quora.com/profile/Swaraj-Biswal-8/" target=”_blank” class="fa fa-quora"></a>
+        <a href="https://twitter.com/Swaraj58404208" target=”_blank” class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/biswalswaraj_42/" target=”_blank” class="fa fa-instagram"></a>
+    </div>
+    <ul>
+        <li><a id="hme" href="index.html">Home</a></li>
+        <li><a id="yt" href="youtube.html">Youtube</a></li>
+        <li><a id="nws" href="News_sites.html">News sites</a></li>
+        <li><a id="abt" href="about.html">About</a></li>
+    </ul>
+    <button id="changebg" style="position: fixed;">Change Background</button>
+    <script>
+        var background = ['background2.jpg', 'background3.png', 'background4.jpg', 'background5.jpg'];
+        var i = 0;
+        let body = document.querySelector('body');
+        document.querySelector('#changebg').addEventListener('click', function () {
+            body.style.backgroundImage = 'url('+background[i]+')';
+            i++;
+            if (i == 4) {
+                i = 0;
+            }
+        });
+    </script>
+    <div style="font-size: 3vw; color: white; position: relative;  top:5vw; display: flex; justify-content: center;">About
+        Me</div>
+    <div class="Content" style="top: 8vw;">
+        <div class="description">
+            <p>Hello, This is Swaraj Kumar Biswal a CS50 student. I am about to complete my highschool and 
+                entering to college. As you know By the website I am really interested in science and technologies. 
+                I love watching videos, listening podcasts, and reading books about them. This is the reason I started programming 
+                . I am pretty much good at python because I learnt it from other sources before taking this course. 
+                But web devlopement is not my thing and
+                this my first time to make a website. Thanks CS50 for pushing me beyond my limits.</p>
+            <p>Hope you will like my website,</p>
+            <p>regards, <br> Swaraj</p>
+        </div>
+    </div>
+</body>
+
+</html>

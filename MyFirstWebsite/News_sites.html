@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="styles_index.css" rel="stylesheet">
+    <link href="styles_nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Geek Treasure</title>
+</head>
+
+<body style="background-image: url('background2.jpg')">
+    <div id="follow_me">
+        <a href="https://www.quora.com/profile/Swaraj-Biswal-8/" target=”_blank” class="fa fa-quora"></a>
+        <a href="https://twitter.com/Swaraj58404208" target=”_blank” class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/biswalswaraj_42/" target=”_blank” class="fa fa-instagram"></a>
+    </div>
+    <ul>
+        <li><a id="hme" href="index.html">Home</a></li>
+        <li><a id="yt" href="youtube.html">Youtube</a></li>
+        <li><a id="nws" href="News_sites.html">News sites</a></li>
+        <li><a id="abt" href="about.html">About</a></li>
+    </ul>
+    <button id="changebg" style="position: fixed;">Change Background</button>
+    <script>
+        var background = ['background2.jpg', 'background3.png', 'background4.jpg', 'background5.jpg'];
+        var i = 0;
+        let body = document.querySelector('body');
+        document.querySelector('#changebg').addEventListener('click', function () {
+            body.style.backgroundImage = 'url('+background[i]+')';
+            i++;
+            if (i == 4) {
+                i = 0;
+            }
+        });
+    </script>
+    <div class="Search" >
+        <form action="https://www.news.google.com/search" class="mt-4" method="get" style="display:flex; flex-direction: column;">
+            <input autocomplete="off" class="Searchbar" name="q" placeholder="Search for news on google" type="search">
+            <button type="submit">google Search</button>
+        </form>
+    </div>
+    <div style="font-size: 3vw; color: white; position: relative;  top:5vw; display: flex; justify-content: center;">
+        News Sites</div>
+    <div class="Content" style="top: 8vw;">
+        <div class="description">
+            <p>Watching news on Science and technologies is very important for everyone. It helps you to keep you
+                updated
+                with the research and inventions in this fast paced world. Here are some of my choices.</p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://www.space.com/" target="_blank"
+                style="text-decoration: None;"><img src="space.png" style="border-radius: 20vw;" alt=""> Space.com</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">News on astronomy, space research etc.</p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://phys.org/" target="_blank"
+                style="text-decoration: None;"><img src="ScienceX.svg" style="border-radius: 20vw;" alt="">phys.org</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">News on science and research on all fields.</p>
+        </div>
+        <div style="font-size: 1.7vw;">
+            <a href="https://techxplore.com/" target="_blank"
+                style="text-decoration: None;"><img src="techexploer.svg" style="border-radius: 20vw;" alt="">
+                techxplore.com</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">News on technologies and engineering.</p>
+        </div>
+
+        <div style="font-size: 1.7vw;">
+            <a href="https://medicalxpress.com/" target="_blank"
+                style="text-decoration: None;"><img src="MedicalXpress.svg" style="border-radius: 20vw;" alt="">
+                medicalxpress.com</a>
+
+            <p style="font-size: 1vw; position: relative; left: 7vw;">News on biotechnologies, medicine and health.</p>
+        </div>
+    </div>
+</body>
+
+</html>
