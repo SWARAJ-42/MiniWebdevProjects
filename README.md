@@ -10,5 +10,8 @@ This is my first website I made while learning html, Css, Javascript for the fir
 ## DigitalClock
 This is a DigitalClock I made while wasting my time.
 
+## Tell me a joke
+Displays random jokes.
+
 ## To-do-list
 This is a todolist application. I made by following a tutorial.
